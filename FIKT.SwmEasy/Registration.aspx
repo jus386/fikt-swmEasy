@@ -1,11 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Registration.aspx.cs" Inherits="Registration" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="FIKT.SwmEasy.Registration" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    <script src="jquery.js"></script>
+    <title>Register</title>
     <style type="text/css">
         .auto-style1 {
             width: 100%;
@@ -58,7 +57,6 @@
             height: 42px;
         }
     </style>
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -133,7 +131,7 @@
             <tr>
                 <td class="auto-style11">&nbsp;</td>
                 <td class="auto-style7">
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" CausesValidation="true" />
                     <input id="Reset1" type="reset" value="reset" /></td>
                 <td class="auto-style12"></td>
             </tr>
@@ -145,7 +143,6 @@
         </table>
     
     </div>
-        
     </form>
 </body>
 </html>

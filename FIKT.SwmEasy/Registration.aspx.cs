@@ -5,13 +5,21 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
-public partial class Registration : System.Web.UI.Page
+namespace FIKT.SwmEasy
 {
-
-    protected void Button1_Click(object sender, EventArgs e)
+    public partial class Registration : System.Web.UI.Page
     {
-        Response.Write("Your Registration is successful");
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (IsValid)
+            {
+                Response.Write("Your Registration is successful");
+            }
+        }
     }
-    
 }

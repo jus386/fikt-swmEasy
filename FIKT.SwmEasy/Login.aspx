@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="FIKT.SwmEasy.Login" %>
 
 <!DOCTYPE html>
 
@@ -36,47 +36,49 @@
         }
     </style>
 </head>
-<body style="width: 744px">
+<body>
     <form id="form1" runat="server">
-    <div class="auto-style1">
     
-        <strong></strong>
-        <table class="auto-style2">
-            <tr>
-                <td class="auto-style4">Email</td>
-                <td class="auto-style5">
-                    <asp:TextBox ID="TextBoxEmail" runat="server" Width="180px"></asp:TextBox>
-                </td>
-                <td class="auto-style7">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Please enter email" ForeColor="Red"></asp:RequiredFieldValidator>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style4">Password</td>
-                <td class="auto-style5">
-                    <asp:TextBox ID="TextBoxPassword" runat="server" TextMode="Password" Width="180px"></asp:TextBox>
-                </td>
-                <td class="auto-style7">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxPassword" ErrorMessage="Please enter password" ForeColor="Red"></asp:RequiredFieldValidator>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">
-                    <asp:Button ID="Button_Login" runat="server" Text="Login" />
-                </td>
-                <td class="auto-style6">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style6">&nbsp;</td>
-            </tr>
-        </table>
-    
-    </div>
+        <div class="auto-style1">
+
+            <strong></strong>
+            <table class="auto-style2">
+                <tr>
+                    <td class="auto-style4">Email</td>
+                    <td class="auto-style5">
+                        <asp:TextBox ID="TextBoxEmail" runat="server" Width="180px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Please enter email" ForeColor="Red"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">Password</td>
+                    <td class="auto-style5">
+                        <asp:TextBox ID="TextBoxPassword" runat="server" TextMode="Password" Width="180px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxPassword" ErrorMessage="Please enter password" ForeColor="Red"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:Button ID="Button_Login" runat="server" Text="Login" OnClick="Button_Login_Click" CausesValidation="true" />
+                    </td>
+                    <td class="auto-style6">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
+                </tr>
+            </table>
+
+        </div>
         <asp:ImageMap ID="ImageMap1" runat="server">
         </asp:ImageMap>
-        <img class="auto-style8" src="Image/login_logo.png" /></form>
+        <img class="auto-style8" src="Image/login_logo.png" />
+    </form>
 </body>
 </html>
