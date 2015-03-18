@@ -20,6 +20,8 @@ namespace FIKT.SwmEasy
         {
             if (IsValid)
             {
+                 
+                
                 SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ConnectionString);
                 conn.Open();
                 string checkemail = "selectcount(*) from UserData where UserName='" + TextBoxEmail.Text + "'";
