@@ -38,7 +38,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -57,6 +65,26 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DataAccess\InitData.aspx" />
+    <Content Include="DataAccess\Queries\DeleteAllData.sql" />
+    <Content Include="packages.config" />
+    <EntityDeploy Include="DataAccess\SwmEasy.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SwmEasy.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="DataAccess\SwmEasy.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SwmEasy.edmx</DependentUpon>
+      <LastGenOutput>SwmEasy.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataAccess\SwmEasy.edmx.diagram">
+      <DependentUpon>SwmEasy.edmx</DependentUpon>
+    </Content>
+    <Content Include="DataAccess\SwmEasy.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SwmEasy.edmx</DependentUpon>
+      <LastGenOutput>SwmEasy.cs</LastGenOutput>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -78,6 +106,47 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\InitData.aspx.cs">
+      <DependentUpon>InitData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataAccess\InitData.aspx.designer.cs">
+      <DependentUpon>InitData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\InitData.cs" />
+    <Compile Include="DataAccess\Professor.cs">
+      <DependentUpon>SwmEasy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\SeminarWork.cs">
+      <DependentUpon>SwmEasy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\SeminarWorkApplication.cs">
+      <DependentUpon>SwmEasy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\SeminarWorkFile.cs">
+      <DependentUpon>SwmEasy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Student.cs">
+      <DependentUpon>SwmEasy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\SwmEasy.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SwmEasy.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\SwmEasy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SwmEasy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\SwmEasy.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SwmEasy.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\sysdiagram.cs">
+      <DependentUpon>SwmEasy.tt</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,6 +164,7 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Model\SeminarWorkModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
@@ -106,6 +176,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
