@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/SwmMasterPage.Master.cs" Inherits="FIKT.SwmEasy.SwmMasterPage" %>
+
+<html>
+
+<head>
+    <title>CSS3_simplistic</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- modernizr enables HTML5 elements and feature detects -->
+    <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div id="main">
+            <header>
+                <div id="logo">
+                    <div id="logo_text">
+                        <!-- class="logo_colour", allows you to change the colour of the text -->
+
+                        <img src="/images/logo.png" />
+
+
+                    </div>
+                </div>
+                <nav>
+                    <ul class="sf-menu" id="nav">
+                        <li class="selected"><a href="Home.aspx">Home</a></li>
+                        <li><a href="examples.html">Search Themes</a></li>
+                        <li><a href="Registration.aspx">Registration</a></li>
+                        <li><a href="Login.aspx">Log In</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="site_content">
+                <div class="gallery">
+                    <ul class="images">
+                        <li class="show">
+                            <img width="950" height="300" src="images/1.jpg" alt="simplistic 1" /></li>
+                        <li>
+                            <img width="950" height="300" src="images/2.jpg" alt="simplistic 2" /></li>
+                    </ul>
+                </div>
+                <asp:ContentPlaceHolder runat="server" ID="MainContent"></asp:ContentPlaceHolder>
+            </div>
+            <div id="sidebar_container">
+                <div class="sidebar">
+                    <div id="leftSection">
+                        <ul style="list-style: none">
+                            <li><a href="create_themes.html">Create Theme</a></li>
+                            <li><a href="active_Themes.html">Active Themes</a></li>
+                            <li><a href="seminars_in_progress.html">Seminars in progress</a></li>
+                            <li><a href="finished_seminars.html">Finished Seminars</a></li>
+                        </ul>
+                    </div>
+
+                    <h5>Menu available only for teachers</h5>
+                </div>
+                <div class="sidebar">
+
+                    <ul>
+                        <li><a href="my_seminars.html">My Seminars</a></li>
+
+                        <li><a href="seminars_in_progres1.html">Seminars in progress</a></li>
+                    </ul>
+                    <h5>Menu available only for students</h5>
+                </div>
+            </div>
+            <h1></h1>
+            <p>&nbsp;</p>
+            <!-- javascript at the bottom for fast page loading -->
+            <script type="text/javascript" src="js/jquery.js"></script>
+            <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+            <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+            <script type="text/javascript" src="js/image_fade.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('ul.sf-menu').sooperfish();
+                });
+            </script>
+    </form>
+</body>
+</html>

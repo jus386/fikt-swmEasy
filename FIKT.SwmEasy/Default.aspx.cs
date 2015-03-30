@@ -15,9 +15,10 @@ namespace FIKT.SwmEasy
         {
             if (!IsPostBack)
             {
+                // Read data from database with EF, create model, bind model
                 using (SwmEasyDBEntities context = new SwmEasyDBEntities())
                 {
-                    var completedWorks = context.SeminarWorks.Where(x => x.IsCompleted).ToList();
+                    //var completedWorks = context.SeminarWorks.Where(x => x.IsCompleted).ToList();
 
                     var listDbEntities = from sWork in context.SeminarWorks
                                          where sWork.IsCompleted

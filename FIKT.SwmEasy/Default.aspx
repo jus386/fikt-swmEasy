@@ -9,24 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            Test Aleksandar
-        </div>
-        <div>
-            Test Sara
-        </div>
-        <div>
-            Test Stefanija
-        </div>
-        <div>
-            Test 
-        </div>
-        <div>
-            Test 
-        </div>
-
-        <div>
             <asp:DataPager ID="DataPager1" runat="server" PagedControlID="ListView1"></asp:DataPager>
-
 
             <table border="0">
                 <asp:ListView ID="ListView1" runat="server">

@@ -42,6 +42,7 @@ namespace FIKT.SwmEasy
             var username = txtUserName.Text;
             var password = txtPassword.Text;
 
+            // Kreiraj korisnik vo Membership provider
             var memUser = Membership.CreateUser(username, password, email);
             using (SwmEasyDBEntities context = new SwmEasyDBEntities())
             {

@@ -65,8 +65,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\style.css" />
     <Content Include="DataAccess\InitData.aspx" />
     <Content Include="DataAccess\Queries\DeleteAllData.sql" />
+    <Content Include="fonts\News Cycle SIL OFL Font License 1.1.txt" />
+    <Content Include="Home.aspx" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\arrows-white.png" />
+    <Content Include="images\bullet.png" />
+    <Content Include="images\graphic.jpg" />
+    <Content Include="images\pattern.png" />
     <Content Include="packages.config" />
     <EntityDeploy Include="DataAccess\SwmEasy.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -85,6 +94,11 @@
       <DependentUpon>SwmEasy.edmx</DependentUpon>
       <LastGenOutput>SwmEasy.cs</LastGenOutput>
     </Content>
+    <Content Include="SwmMasterPage.Master" />
+    <Content Include="fonts\NewsCycle-Regular.eot" />
+    <Content Include="fonts\NewsCycle-Regular.ttf" />
+    <Content Include="fonts\YanoneKaffeesatz-Regular.eot" />
+    <Content Include="fonts\YanoneKaffeesatz-Regular.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -102,7 +116,11 @@
     <Content Include="Image\login_logo.png" />
     <Content Include="Login.aspx" />
     <Content Include="Registration.aspx" />
+    <Content Include="Scripts\image_fade.js" />
     <Content Include="Scripts\jquery.2.1.3.min.js" />
+    <Content Include="Scripts\jquery.easing-sooper.js" />
+    <Content Include="Scripts\jquery.sooperfish.js" />
+    <Content Include="Scripts\modernizr-1.5.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +175,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -172,6 +197,13 @@
     </Compile>
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SwmMasterPage.Master.cs">
+      <DependentUpon>SwmMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SwmMasterPage.Master.designer.cs">
+      <DependentUpon>SwmMasterPage.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
