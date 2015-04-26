@@ -2,6 +2,8 @@
   font-family: Yanone Kaffeesatz; 
     src: url('../fonts/YanoneKaffeesatz-Regular.eot'); 
     src: local("Yanone Kaffeesatz"), url('../fonts/YanoneKaffeesatz-Regular.ttf'); 
+
+
 } 
 
 @font-face { 
@@ -133,13 +135,14 @@ ol li {
 }
 
 #main, nav, #container, #logo, #site_content, footer { 
+  
   margin-left: auto; 
   margin-right: auto;
 }
 
 #main {
   margin: 5px auto;
-  width: 950px;
+  width: 100% !important;
   background: transparent;
   padding-bottom: 30px;
 }
@@ -147,11 +150,11 @@ ol li {
 header { 
   background: transparent;
   height: 130px;
+  margin-left:17%;
 }
 
 #logo { 
-  width: 950px;
-  height: 130px;
+  
   background: transparent;
   color: #FFF;
   padding: 0;
@@ -164,7 +167,9 @@ header {
   text-transform: none;
   margin: 0;
 }
-
+#logo_text {
+    width: 30%;
+}
 #logo_text h1, #logo_text h1 a, #logo_text h1 a:hover { 
   padding: 0;
   color: #FFF;
@@ -188,23 +193,27 @@ header {
 
 nav { 
   height: 44px;
-  width: 950px;
-  float: right;
-  margin: -20px auto 0 auto;
+  width: 100%;
+  float:left;
+  margin: -40px 100px;
   color: #FFF;
   border-bottom: 1px solid #FFF;
 } 
 
 #site_content { 
-  width: 950px;
+  position:relative !important;
+  width: 70% !important;
+  float:right;
   overflow: hidden;
   margin: 0px auto 0 auto;
   padding: 15px 0 15px 0;
 } 
 
 #sidebar_container { 
-  float: left;
-  width: 244px;
+    position:relative;
+    display:inline;
+  float: right;
+  width: 20%;
   margin: 20px 0 0 0;
 }
 

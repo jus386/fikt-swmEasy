@@ -33,11 +33,7 @@
             text-align: left;
         }
 
-        .auto-style8 {
-            width: 656px;
-            height: 206px;
-        }
-    </style>
+        </style>
 
 
     <div class="auto-style1">
@@ -45,12 +41,12 @@
         <strong></strong>
         <table class="auto-style2">
             <tr>
-                <td class="auto-style4">Email</td>
+                <td class="auto-style4">User name</td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="TextBoxEmail" runat="server" Width="180px"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxUsername" runat="server" Width="180px"></asp:TextBox>
                 </td>
                 <td class="auto-style7">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Please enter email" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxUsername" ErrorMessage="Please enter valid user name" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -79,5 +75,5 @@
     </div>
     <asp:ImageMap ID="ImageMap1" runat="server">
     </asp:ImageMap>
-    <img class="auto-style8" src="Image/login_logo.png" />
+    &nbsp;
 </asp:Content>

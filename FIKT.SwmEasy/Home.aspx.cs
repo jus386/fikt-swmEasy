@@ -24,14 +24,14 @@ namespace FIKT.SwmEasy
                                          where sWork.IsCompleted
                                          select sWork;
 
-                    var listModels = new List<SeminarWorkModel>();
+                   /* var listModels = new List<SeminarWorkModel>();
                     foreach (var dbEntity in listDbEntities)
                     {
                         listModels.Add(new SeminarWorkModel(dbEntity));
                     }
 
                     ListView1.DataSource = listModels;
-                    ListView1.DataBind();
+                    ListView1.DataBind();*/
                 }
             }
         }

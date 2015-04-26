@@ -24,15 +24,16 @@
 
 
                     </div>
-                </div>
-                <nav>
+                    <nav>
                     <ul class="sf-menu" id="nav">
-                        <li class="selected"><a href="Home.aspx">Home</a></li>
-                        <li><a href="examples.html">Search Themes</a></li>
-                        <li><a href="Registration.aspx">Registration</a></li>
-                        <li><a href="Login.aspx">Log In</a></li>
+                        <li class="selected"><a href="Home.aspx">Почетна</a></li>
+                        <li><a href="examples.html">Пребарај теми</a></li>
+                        <li><a href="Registration.aspx">Регистрирај се</a></li>
+                        <li><a href="Login.aspx">Најави се</a></li>
                     </ul>
                 </nav>
+                </div>
+                
             </header>
             <div id="site_content">
                 <div class="gallery">
@@ -49,23 +50,23 @@
                 <div class="sidebar">
                     <div id="leftSection">
                         <ul style="list-style: none">
-                            <li><a href="create_themes.html">Create Theme</a></li>
-                            <li><a href="active_Themes.html">Active Themes</a></li>
-                            <li><a href="seminars_in_progress.html">Seminars in progress</a></li>
-                            <li><a href="finished_seminars.html">Finished Seminars</a></li>
+                            <li><a href="create_themes.html">Креирај тема</a></li>
+                            <li><a href="active_Themes.html">Активни теми</a></li>
+                            <li><a href="seminars_in_progress.html">Семинарски во изработка</a></li>
+                            <li><a href="finished_seminars.html">Готови семинарски</a></li>
                         </ul>
                     </div>
 
-                    <h5>Menu available only for teachers</h5>
+                    <h5>Мени достапно само за професори</h5>
                 </div>
                 <div class="sidebar">
 
                     <ul>
-                        <li><a href="my_seminars.html">My Seminars</a></li>
+                        <li><a href="my_seminars.html">Мои семинарски</a></li>
 
-                        <li><a href="seminars_in_progres1.html">Seminars in progress</a></li>
+                        <li><a href="seminars_in_progres1.html">Семинарски во изработка</a></li>
                     </ul>
-                    <h5>Menu available only for students</h5>
+                    <h5>Мени достапно само за студенти</h5>
                 </div>
             </div>
             <h1></h1>
@@ -80,6 +81,7 @@
                     $('ul.sf-menu').sooperfish();
                 });
             </script>
+            </div>
     </form>
 </body>
 </html>
